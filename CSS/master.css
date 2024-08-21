@@ -1,0 +1,107 @@
+body {
+  min-height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+  margin: 0;
+  background-color: hsl(185, 75%, 39%);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 400px) {
+  body {
+    margin: 0 25px;
+  }
+}
+
+:root {
+  --main-color: hsl(229, 23%, 23%);
+  --p-color: hsl(227, 10%, 46%);
+}
+
+.top-bg {
+  position: absolute;
+  bottom: 41%;
+  right: 50%;
+}
+
+.bottom-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+main {
+  background-color: white;
+  text-align: center;
+  border-radius: 13px;
+  position: relative;
+}
+
+main .image {
+  position: relative;
+}
+
+main .pattern {
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+  display: block;
+}
+
+main .victor {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  border-radius: 50%;
+  border: 6px solid white;
+}
+
+main .title {
+  margin: 70px 0 25px;
+}
+
+main .title h1 {
+  font-size: 18px;
+  margin: 0 0 13px;
+  color: var(--main-color);
+}
+
+main .title h1 span {
+  display: inline-block;
+  margin-left: 3px;
+  color: var(--p-color);
+  font-weight: 400;
+}
+
+main .title p {
+  color: var(--p-color);
+  margin: 0;
+  font-size: 15px;
+}
+
+main .info {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 24px 0;
+  border-top: 1px solid #ddd;
+}
+
+main .info .stats {
+}
+
+main .info .stats span {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 22px;
+  color: var(--main-color);
+}
+
+main .info .stats p {
+  margin: 5px 0 0;
+  color: var(--p-color);
+  font-size: 12px;
+  letter-spacing: 1px;
+}
