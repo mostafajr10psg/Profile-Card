@@ -23,13 +23,22 @@ body {
 .top-bg {
   position: fixed;
   bottom: 41%;
-  right: 40%;
+  right: 50%;
 }
 
 .bottom-bg {
   position: fixed;
   top: 50%;
-  left: 40%;
+  left: 50%;
+}
+
+@media (max-width: 767px) {
+  .top-bg {
+    right: 40%;
+  }
+  .bottom-bg {
+    left: 40%;
+  }
 }
 
 main {
